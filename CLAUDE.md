@@ -2,7 +2,7 @@
 
 Este arquivo instrui um agente de IA (Claude ou equivalente) sobre como operar este repositório como uma instância da metodologia [Hipocampo](https://github.com/mklagenberg/hipocampo).
 
-**Versão do Hipocampo seguida por esta instância:** ^1.5.0
+**Versão do Hipocampo seguida por esta instância:** ^1.7.0
 
 ## Invariantes (nunca sobrescrever)
 
@@ -13,11 +13,11 @@ Este arquivo instrui um agente de IA (Claude ou equivalente) sobre como operar e
 
 Detalhe completo dos invariantes: `hipocampo/SPEC.md`, seção 8.
 
-## Antes de usar este template: LICENSE
+## Antes de usar este template
 
-"Use this template" copia o `LICENSE` Apache-2.0 da metodologia — **errado para um repositório de conteúdo**. Primeiro passo depois de instanciar: substituir o `LICENSE` pelo template correto em `license-templates/` (pessoal ou corporativo), preenchido com o titular real. Ver `license-templates/README.md`.
+Siga `POS-INSTANCIACAO.md` — checklist obrigatório: privacidade do repositório, troca de `LICENSE`, personalização e instalação da skill (`skill/SKILL.md`), preenchimento deste arquivo, declaração de versão.
 
-## Extensões locais a Hipocampo v1.5.0
+## Extensões locais a Hipocampo v1.7.0
 
 <!-- Preencher ao instanciar. Documentar aqui qualquer ajuste específico desta instância — nunca deixar implícito. -->
 

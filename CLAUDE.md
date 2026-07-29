@@ -2,18 +2,22 @@
 
 Este arquivo instrui um agente de IA (Claude ou equivalente) sobre como operar este repositório como uma instância da metodologia [Hipocampo](https://github.com/mklagenberg/hipocampo).
 
-**Versão do Hipocampo seguida por esta instância:** ^1.0.0
+**Versão do Hipocampo seguida por esta instância:** ^1.5.0
 
 ## Invariantes (nunca sobrescrever)
 
 1. Este repositório nunca é tornado público.
 2. `author` é sempre uma pessoa, nunca a IA.
-3. Documento nunca é apagado fisicamente — só arquivado (`status: archived`) ou substituído (`status: superseded`, com `superseded_by` preenchido).
+3. Documento nunca é apagado fisicamente — só arquivado (`status: archived`) ou substituído (`status: superseded`, com `superseded_by` preenchido). Exceção estreita: apagamento por obrigação legal de eliminação de dado pessoal, sempre com decisão humana explícita (ver `hipocampo/decisions/0010`).
 4. Nunca escrever, editar ou apagar conteúdo sem pedido explícito do usuário nesta conversa.
 
 Detalhe completo dos invariantes: `hipocampo/SPEC.md`, seção 8.
 
-## Extensões locais a Hipocampo v1.0.0
+## Antes de usar este template: LICENSE
+
+"Use this template" copia o `LICENSE` Apache-2.0 da metodologia — **errado para um repositório de conteúdo**. Primeiro passo depois de instanciar: substituir o `LICENSE` pelo template correto em `license-templates/` (pessoal ou corporativo), preenchido com o titular real. Ver `license-templates/README.md`.
+
+## Extensões locais a Hipocampo v1.5.0
 
 <!-- Preencher ao instanciar. Documentar aqui qualquer ajuste específico desta instância — nunca deixar implícito. -->
 
@@ -25,6 +29,8 @@ Detalhe completo dos invariantes: `hipocampo/SPEC.md`, seção 8.
 ## Frontmatter — referência rápida
 
 Ver o schema completo em `hipocampo/SPEC.md`, seção 2. Resumo dos campos obrigatórios em todo documento novo: `title`, `date`, `updated`, `source`, `type`, `temporality`, `ttl`, `status`, `visibility`, `author`, `revision`.
+
+Ao operar sobre múltiplos documentos (busca, triagem, staleness), leia o frontmatter primeiro — é suficiente pra filtrar relevância na maioria dos casos — e só leia o corpo completo do documento depois de decidir que aquele documento específico precisa (mecânica CRUD/frontmatter-first, `hipocampo/SPEC.md`, seção 2-B).
 
 ## Referências cross-repositório
 

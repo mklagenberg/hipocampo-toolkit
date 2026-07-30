@@ -2,7 +2,7 @@
 
 Este é o arquivo canônico de instrução operacional desta instância da metodologia [Hipocampo](https://github.com/mklagenberg/hipocampo) — segue o padrão aberto [AGENTS.md](https://agents.md), funciona com qualquer agente de IA, não só Claude (ver `hipocampo/decisions/0015-agents-md-arquivo-canonico-instrucao.md`). `CLAUDE.md`, neste repositório, é só um ponteiro fino pra este arquivo.
 
-**Versão do Hipocampo seguida por esta instância:** ^1.9.0
+**Versão do Hipocampo seguida por esta instância:** ^1.9.0 + não lançado (este template já reflete conteúdo mesclado em `hipocampo`@main além da última release formal — ver `hipocampo/CHANGELOG.md`, seção `[Não lançado]`, e `hipocampo/decisions/0021-politica-de-cadencia-de-release.md`)
 
 ## Invariantes (nunca sobrescrever)
 

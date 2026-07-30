@@ -19,4 +19,4 @@ Guia completo de adoção (incluindo ordem de leitura pra quem está aprendendo 
 - `example/exemplo-nota.md` — documento de exemplo com frontmatter completo.
 - `skill/SKILL.md` — skill genérica e portável da metodologia: ritual REM, frontmatter audit, auditoria estrutural, resolução de `related`, mecânica CRUD/frontmatter-first, checagem de release nova. Precisa ser personalizada (roteador de repositórios e identidade) antes de uso real — ver `POS-INSTANCIACAO.md`.
 
-Versão do Hipocampo referenciada por este template: **^1.9.0**.
+Versão do Hipocampo referenciada por este template: **^1.9.0 + não lançado** — ver `hipocampo/CHANGELOG.md`, seção `[Não lançado]`, pra saber exatamente o que isso inclui além da última release formal.

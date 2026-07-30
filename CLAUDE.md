@@ -2,7 +2,7 @@
 
 Este arquivo instrui um agente de IA (Claude ou equivalente) sobre como operar este repositório como uma instância da metodologia [Hipocampo](https://github.com/mklagenberg/hipocampo).
 
-**Versão do Hipocampo seguida por esta instância:** ^1.7.0
+**Versão do Hipocampo seguida por esta instância:** ^1.9.0
 
 ## Invariantes (nunca sobrescrever)
 
@@ -17,7 +17,7 @@ Detalhe completo dos invariantes: `hipocampo/SPEC.md`, seção 8.
 
 Siga `POS-INSTANCIACAO.md` — checklist obrigatório: privacidade do repositório, troca de `LICENSE`, personalização e instalação da skill (`skill/SKILL.md`), preenchimento deste arquivo, declaração de versão.
 
-## Extensões locais a Hipocampo v1.7.0
+## Extensões locais a Hipocampo v1.9.0
 
 <!-- Preencher ao instanciar. Documentar aqui qualquer ajuste específico desta instância — nunca deixar implícito. -->
 

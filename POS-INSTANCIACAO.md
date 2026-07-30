@@ -21,17 +21,23 @@ O template copiou o Apache-2.0 da metodologia — **errado para um repositório 
 
 1. Copie `skill/SKILL.md` pra sua própria skill personalizada (não edite o arquivo dentro do repositório de conteúdo como se isso já a ativasse — skills vivem no seu ambiente de IA, não no repositório).
 2. Preencha a tabela "Personalização obrigatória" com os repositórios reais da sua instância (conceitos pessoais, vault pessoal, conteúdo corporativo, vault corporativo — só o que existir).
-3. Registre a skill de fato no seu ambiente (ex.: via `save_skill`, ou o mecanismo equivalente da ferramenta que você usa).
+3. Se você operar mais de uma conta de git que resolvem pro mesmo autor humano (ex.: pessoal e vinculada a empregador), preencha também a tabela de identidade multi-conta — só na sua cópia pessoal, nunca na genérica (`hipocampo/SPEC.md`, seção 12).
+4. Registre a skill de fato no seu ambiente (ex.: via `save_skill`, ou o mecanismo equivalente da ferramenta que você usa).
 
 Sem este passo, você tem o texto da skill guardado num arquivo, mas nenhum agente vai realmente segui-la.
 
-## 4. Preencha o CLAUDE.md
+## 4. Preencha o AGENTS.md
 
-Abra `CLAUDE.md` e preencha o bloco "Extensões locais a Hipocampo vX.Y": subpastas de `category` que você já sabe que vai usar, `ttl` default por tipo de conteúdo, rituais extras, convenção de commit/branch. Nunca deixar implícito — se não houver nada pra declarar ainda, deixe registrado como "nenhum ainda", não em branco.
+`AGENTS.md` é o arquivo canônico de instrução desta instância (`CLAUDE.md` é só um ponteiro fino pra ele — não precisa editar o `CLAUDE.md`). Abra `AGENTS.md` e preencha:
+
+- **Escopo deste repositório** — o que deve e o que não deve ser armazenado aqui, e pra onde vai o que não pertence. Nunca deixar implícito.
+- **Identidade de autor multi-conta**, se aplicável (mesma nota do passo 3 — só se você usar mais de uma conta de git).
+- **Extensões locais a Hipocampo vX.Y** — subpastas de `category` que você já sabe que vai usar, `ttl` default por tipo de conteúdo, rituais extras, convenção de commit/branch. Se não houver nada pra declarar ainda, deixe registrado como "nenhum ainda", não em branco.
+- **Rituais de manutenção** — confirme a cadência (default: frontmatter audit + REM diários, auditoria estrutural semanal) ou registre o ajuste real desta instância.
 
 ## 5. Declare a versão de compatibilidade
 
-No mesmo `CLAUDE.md`, confirme a linha "Versão do Hipocampo seguida por esta instância" — deve refletir a versão atual do `hipocampo/SPEC.md` no momento da instanciação, não um valor copiado sem checar.
+No mesmo `AGENTS.md`, confirme a linha "Versão do Hipocampo seguida por esta instância" — deve refletir a versão atual do `hipocampo/SPEC.md` no momento da instanciação, não um valor copiado sem checar.
 
 ## 6. Apague ou adapte o exemplo
 
@@ -39,4 +45,4 @@ No mesmo `CLAUDE.md`, confirme a linha "Versão do Hipocampo seguida por esta in
 
 ## Pronto
 
-A partir daqui, siga `hipocampo/GETTING-STARTED.md` (seções 3 em diante) pra escrever seu primeiro documento e configurar as rotinas (staleness, consolidação REM), já cobertas pela skill que você acabou de personalizar.
+A partir daqui, siga `hipocampo/GETTING-STARTED.md` (seções 3 em diante) pra escrever seu primeiro documento e configurar as rotinas (frontmatter audit, REM, auditoria estrutural), já cobertas pela skill que você acabou de personalizar.

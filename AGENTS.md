@@ -20,9 +20,10 @@ Siga `POS-INSTANCIACAO.md` — checklist obrigatório: privacidade do repositór
 
 ## Escopo deste repositório
 
-<!-- Preencher ao instanciar: o que deve e o que não deve ser armazenado aqui, e pra onde vai o que não pertence. Nunca deixar implícito — é a fonte que os rituais de manutenção (REM, auditoria estrutural) consultam pra decidir se um documento pertence a este repositório (hipocampo/SPEC.md, seção 11). -->
+<!-- Preencher ao instanciar. Dois campos obrigatórios, nunca implícitos: -->
 
-(nenhuma definição ainda — preencher ao instanciar, antes do primeiro documento real)
+- **Tipo de instância:** `[preencher: corporativa | pessoal]` — critério que a auditoria estrutural (rituais de manutenção, abaixo) usa pra saber qual variante da política de dados sensíveis (`hipocampo/SPEC.md`, seção 2-A) se aplica a este repositório. Nunca inferido pelo agente a partir do nome do repositório — sempre lido daqui (`hipocampo/decisions/0022-tipo-de-instancia-declarado-no-agents-md.md`).
+- **O que pertence aqui / o que não pertence e pra onde vai:** `[preencher ao instanciar, antes do primeiro documento real]` — é a fonte que os rituais de manutenção (REM, auditoria estrutural) consultam pra decidir se um documento pertence a este repositório (`hipocampo/SPEC.md`, seção 11).
 
 ## Identidade de autor multi-conta
 
@@ -41,7 +42,7 @@ Siga `POS-INSTANCIACAO.md` — checklist obrigatório: privacidade do repositór
 
 ## Rituais de manutenção
 
-Cadência recomendada pela metodologia (`hipocampo/SPEC.md`, seções 5-A a 5-C): frontmatter audit e ritual REM diários (audit sempre antes da REM, no mesmo ciclo); auditoria estrutural semanal (atomicidade, posicionamento, verificação de dado sensível). Preencher aqui se a cadência real desta instância difere da recomendação, ou se algum ritual já está automatizado (ex.: scheduled task).
+Cadência recomendada pela metodologia (`hipocampo/SPEC.md`, seções 5-A a 5-C): frontmatter audit e ritual REM diários (audit sempre antes da REM, no mesmo ciclo); auditoria estrutural semanal (atomicidade, posicionamento, e verificação de vazamento de dado sensível — usando o "Tipo de instância" declarado acima). Preencher aqui se a cadência real desta instância difere da recomendação, ou se algum ritual já está automatizado (ex.: scheduled task).
 
 - **Cadência real:** (default da metodologia, nenhum ajuste ainda)
 

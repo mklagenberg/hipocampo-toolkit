@@ -17,20 +17,20 @@ O template copiou o Apache-2.0 da metodologia — **errado para um repositório 
 
 ## 3. Personalize e instale sua própria cópia da skill
 
-`skill/SKILL.md` é genérica — hardcoda só os dois repositórios universais da metodologia (`hipocampo`, `hipocampo-toolkit`). Ela não sabe nada sobre os seus repositórios pessoais/corporativos até você preencher o roteador.
+`skill/` é genérica — `SKILL.md` (roteador) e `skill/references/*.md` (procedimento completo de cada mecanismo) hardcodam só os dois repositórios universais da metodologia (`hipocampo`, `hipocampo-toolkit`). Ela não sabe nada sobre os seus repositórios pessoais/corporativos até você preencher o roteador.
 
-1. Copie `skill/SKILL.md` pra sua própria skill personalizada (não edite o arquivo dentro do repositório de conteúdo como se isso já a ativasse — skills vivem no seu ambiente de IA, não no repositório).
-2. Preencha a tabela "Personalização obrigatória" com os repositórios reais da sua instância (conceitos pessoais, vault pessoal, conteúdo corporativo, vault corporativo — só o que existir).
-3. Se você operar mais de uma conta de git que resolvem pro mesmo autor humano (ex.: pessoal e vinculada a empregador), preencha também a tabela de identidade multi-conta — só na sua cópia pessoal, nunca na genérica (`hipocampo/SPEC.md`, seção 12).
+1. Copie a pasta `skill/` inteira (`SKILL.md` + `references/`) pra sua própria skill personalizada (não edite os arquivos dentro do repositório de conteúdo como se isso já a ativasse — skills vivem no seu ambiente de IA, não no repositório).
+2. Preencha a tabela de roteador de repositórios em `references/personalizacao.md` com os repositórios reais da sua instância (conceitos pessoais, vault pessoal, conteúdo corporativo, vault corporativo — só o que existir).
+3. Se você operar mais de uma conta de git que resolvem pro mesmo autor humano (ex.: pessoal e vinculada a empregador), preencha também a tabela de identidade multi-conta no mesmo arquivo — só na sua cópia pessoal, nunca na genérica (`hipocampo/SPEC.md`, seção 12).
 4. Registre a skill de fato no seu ambiente (ex.: via `save_skill`, ou o mecanismo equivalente da ferramenta que você usa).
 
-Sem este passo, você tem o texto da skill guardado num arquivo, mas nenhum agente vai realmente segui-la.
+Sem este passo, você tem o texto da skill guardado em arquivos, mas nenhum agente vai realmente segui-la.
 
 ## 4. Preencha o AGENTS.md
 
 `AGENTS.md` é o arquivo canônico de instrução desta instância (`CLAUDE.md` é só um ponteiro fino pra ele — não precisa editar o `CLAUDE.md`). Abra `AGENTS.md` e preencha:
 
-- **Escopo deste repositório** — o que deve e o que não deve ser armazenado aqui, e pra onde vai o que não pertence. Nunca deixar implícito.
+- **Escopo deste repositório** — dois campos obrigatórios: o **tipo de instância** (`corporativa` ou `pessoal`, usado pela auditoria estrutural pra saber qual variante da política de dados sensíveis aplicar) e o que deve/não deve ser armazenado aqui, e pra onde vai o que não pertence. Nunca deixar implícito.
 - **Identidade de autor multi-conta**, se aplicável (mesma nota do passo 3 — só se você usar mais de uma conta de git).
 - **Extensões locais a Hipocampo vX.Y** — subpastas de `category` que você já sabe que vai usar, `ttl` default por tipo de conteúdo, rituais extras, convenção de commit/branch. Se não houver nada pra declarar ainda, deixe registrado como "nenhum ainda", não em branco.
 - **Rituais de manutenção** — confirme a cadência (default: frontmatter audit + REM diários, auditoria estrutural semanal) ou registre o ajuste real desta instância.

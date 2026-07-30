@@ -11,11 +11,12 @@ Guia completo de adoção (incluindo ordem de leitura pra quem está aprendendo 
 
 ## O que tem aqui
 
-- `CLAUDE.md` — instrução pro agente de IA operar essa instância, com o bloco de extensões locais pronto pra preencher.
+- `AGENTS.md` — arquivo canônico de instrução pro agente de IA operar essa instância (qualquer ferramenta, não só Claude), com os blocos de escopo do repositório, identidade multi-conta e extensões locais prontos pra preencher.
+- `CLAUDE.md` — ponteiro fino pra `AGENTS.md`, só porque Claude Code/Cowork procuram por este nome especificamente.
 - `POS-INSTANCIACAO.md` — checklist de primeira configuração depois de instanciar.
 - `license-templates/` — templates de LICENSE pros perfis pessoal e corporativo, pra substituir o Apache-2.0 herdado indevidamente.
 - `registry.md` — tabela vazia pra registrar aliases de `related` cross-repositório (ver `hipocampo/SPEC.md`, seção 6).
 - `example/exemplo-nota.md` — documento de exemplo com frontmatter completo.
-- `skill/SKILL.md` — skill genérica e portável da metodologia: ritual REM, staleness, resolução de `related`, mecânica CRUD/frontmatter-first, checagem de release nova. Precisa ser personalizada (roteador de repositórios) antes de uso real — ver `POS-INSTANCIACAO.md`.
+- `skill/SKILL.md` — skill genérica e portável da metodologia: ritual REM, frontmatter audit, auditoria estrutural, resolução de `related`, mecânica CRUD/frontmatter-first, checagem de release nova. Precisa ser personalizada (roteador de repositórios e identidade) antes de uso real — ver `POS-INSTANCIACAO.md`.
 
 Versão do Hipocampo referenciada por este template: **^1.9.0**.

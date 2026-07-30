@@ -26,7 +26,7 @@ Esta cópia só conhece dois repositórios universais (`mklagenberg/hipocampo`, 
 
 ## Checagem de release nova (início de sessão)
 
-Comparar a versão declarada no `AGENTS.md` desta instância contra a versão publicada em `mklagenberg/hipocampo/SPEC.md`. Se houver diferença: avisar as duas versões, resumir o que mudou via `CHANGELOG.md` (incluindo `[Não lançado]`), e nunca aplicar a atualização sozinho — apontar a decisão pro usuário, citando `MIGRATIONS.md` se for MAJOR.
+Comparar a versão declarada no `AGENTS.md` desta instância contra a versão publicada em `mklagenberg/hipocampo/SPEC.md`. Se houver diferença: avisar as duas versões, e apontar pro **[`hipocampo/UPGRADE.md`](https://github.com/mklagenberg/hipocampo/blob/main/UPGRADE.md)** como próximo passo — checklist cumulativa e idempotente do que a instância precisa pra ficar aderente, já classificada em Obrigatório/Recomendado/Informativo. Nunca resumir o `CHANGELOG.md` na hora tentando reconstruir esse trabalho de síntese — o `UPGRADE.md` já existe exatamente pra isso (`decisions/0024`). Nunca aplicar a atualização sozinho — apontar a decisão pro usuário, citando `MIGRATIONS.md` se for MAJOR.
 
 ## Ler e escrever documentos (CRUD)
 

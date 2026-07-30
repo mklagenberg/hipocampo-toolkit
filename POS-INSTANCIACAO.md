@@ -15,16 +15,16 @@ O template copiou o Apache-2.0 da metodologia — **errado para um repositório 
 3. Se este repositório for de nível "vault" (só recebe `visibility: confidential`/`restricted`), siga a nota de ajuste dentro do próprio template.
 4. Salve o resultado como `LICENSE` na raiz, substituindo o Apache-2.0 herdado.
 
-## 3. Personalize e instale sua própria cópia da skill
+## 3. Apague a pasta `skill/` herdada e instale a skill de verdade
 
-`skill/` é genérica — `SKILL.md` (roteador) e `skill/references/*.md` (procedimento completo de cada mecanismo) hardcodam só os dois repositórios universais da metodologia (`hipocampo`, `hipocampo-toolkit`). Ela não sabe nada sobre os seus repositórios pessoais/corporativos até você preencher o roteador.
+A pasta `skill/` que veio junto com "Use this template" é resíduo do mecanismo de cópia do GitHub — **não é uma cópia funcional da skill**, nunca foi, e este repositório de conteúdo não deveria carregar uma. A skill roda sempre no seu ambiente de IA (Cowork, Claude Code, etc.), por pessoa, nunca por repositório — nenhum agente varre repositórios do GitHub procurando um `SKILL.md` pra ativar automaticamente (ver `hipocampo/decisions/0025-skill-client-side-nunca-por-repositorio.md`).
 
-1. Copie a pasta `skill/` inteira (`SKILL.md` + `references/`) pra sua própria skill personalizada (não edite os arquivos dentro do repositório de conteúdo como se isso já a ativasse — skills vivem no seu ambiente de IA, não no repositório).
-2. Preencha a tabela de roteador de repositórios em `references/personalizacao.md` com os repositórios reais da sua instância (conceitos pessoais, vault pessoal, conteúdo corporativo, vault corporativo — só o que existir).
-3. Se você operar mais de uma conta de git que resolvem pro mesmo autor humano (ex.: pessoal e vinculada a empregador), preencha também a tabela de identidade multi-conta no mesmo arquivo — só na sua cópia pessoal, nunca na genérica (`hipocampo/SPEC.md`, seção 12).
-4. Registre a skill de fato no seu ambiente (ex.: via `save_skill`, ou o mecanismo equivalente da ferramenta que você usa).
+1. **Apague a pasta `skill/` deste repositório recém-instanciado.** Ela não faz falta — editar os arquivos dentro dela nunca teve efeito nenhum.
+2. Vá direto em [`hipocampo-toolkit/skill/SKILL.md`](skill/SKILL.md) + `skill/references/*.md` (aqui no toolkit, a fonte canônica) e instale sua própria cópia personalizada no seu ambiente de IA (ex.: via `save_skill`, ou o mecanismo equivalente da ferramenta que você usa).
+3. Preencha a tabela de roteador de repositórios em `references/personalizacao.md` da sua cópia, incluindo **este repositório novo** — junto com os demais que você já opera.
+4. Se você operar mais de uma conta de git que resolvem pro mesmo autor humano (ex.: pessoal e vinculada a empregador), preencha também a tabela de identidade multi-conta no mesmo arquivo — só na sua cópia pessoal, nunca na genérica (`hipocampo/SPEC.md`, seção 12).
 
-Sem este passo, você tem o texto da skill guardado em arquivos, mas nenhum agente vai realmente segui-la.
+Sem este passo, você tem o texto da skill guardado em arquivos no toolkit, mas nenhum agente vai realmente segui-la — e continuar com a pasta `skill/` dentro deste repositório só mantém viva a ideia errada de que ela faz alguma coisa aqui.
 
 ## 4. Preencha o AGENTS.md
 
